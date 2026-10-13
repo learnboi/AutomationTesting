@@ -1,0 +1,5 @@
+.announcement{position:relative}
+.announcement-close{position:absolute;right:22px;top:9px;color:#b8ced3;display:flex;padding:0}
+.announcement-close:hover{color:#fff}
+@media(max-width:720px){.announcement-close{right:10px}}
+

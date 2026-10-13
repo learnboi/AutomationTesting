@@ -1,0 +1,12 @@
+import type { ButtonHTMLAttributes, InputHTMLAttributes, SelectHTMLAttributes, TextareaHTMLAttributes } from 'react'
+import { LoaderCircle } from 'lucide-react'
+
+export function Button({ children, variant = 'primary', size = 'md', loading, className = '', ...props }: ButtonHTMLAttributes<HTMLButtonElement> & { variant?: 'primary' | 'secondary' | 'ghost' | 'danger' | 'outline'; size?: 'sm' | 'md' | 'lg'; loading?: boolean }) {
+  return <button className={`btn btn-${variant} btn-${size} ${className}`} disabled={loading || props.disabled} {...props}>{loading && <LoaderCircle size={16} className="spin" />}{children}</button>
+}
+export function Card({ children, className = '' }: { children: React.ReactNode; className?: string }) { return <div className={`card ${className}`}>{children}</div> }
+export function Badge({ children, tone = 'teal' }: { children: React.ReactNode; tone?: string }) { return <span className={`badge badge-${tone.toLowerCase().replace(/ /g, '-')}`}>{children}</span> }
+export function Input({ label, error, ...props }: InputHTMLAttributes<HTMLInputElement> & { label?: string; error?: string }) { return <label className="field">{label && <span className="field-label">{label}</span>}<input className={`input ${error ? 'input-error' : ''}`} {...props} />{error && <span className="error-text">{error}</span>}</label> }
+export function Select({ label, children, error, ...props }: SelectHTMLAttributes<HTMLSelectElement> & { label?: string; error?: string }) { return <label className="field">{label && <span className="field-label">{label}</span>}<select className={`input ${error ? 'input-error' : ''}`} {...props}>{children}</select>{error && <span className="error-text">{error}</span>}</label> }
+export function Textarea({ label, error, ...props }: TextareaHTMLAttributes<HTMLTextAreaElement> & { label?: string; error?: string }) { return <label className="field">{label && <span className="field-label">{label}</span>}<textarea className={`input textarea ${error ? 'input-error' : ''}`} {...props} />{error && <span className="error-text">{error}</span>}</label> }
+export function SectionTitle({ eyebrow, title, copy, action }: { eyebrow?: string; title: string; copy?: string; action?: React.ReactNode }) { return <div className="section-title"><div>{eyebrow && <span className="eyebrow">{eyebrow}</span>}<h2>{title}</h2>{copy && <p>{copy}</p>}</div>{action}</div> }

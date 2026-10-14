@@ -1,0 +1,21 @@
+{
+  "projects": {
+    "default": "automation-testing-48321"
+  },
+  "targets": {
+    "automation-testing-48321": {
+      "hosting": {
+        "shoptest": ["ttm-shoptest"],
+        "carepoint": ["ttm-carepoint"],
+        "finflow": ["ttm-finflow"],
+        "tripnest": ["ttm-tripnest"],
+        "skillspring": ["ttm-skillspring"],
+        "bitedash": ["ttm-bitedash"],
+        "homescout": ["ttm-homescout"],
+        "hirepath": ["ttm-hirepath"],
+        "connectplus": ["ttm-connectplus"],
+        "coverwise": ["ttm-coverwise"]
+      }
+    }
+  }
+}

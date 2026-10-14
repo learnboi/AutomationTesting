@@ -1,0 +1,21 @@
+{
+  "hosting": [
+    {"target":"shoptest","public":"automation-testing/shoptest/dist","ignore":["firebase.json","**/.*","**/node_modules/**"],"rewrites":[{"source":"**","destination":"/index.html"}]},
+    {"target":"carepoint","public":"automation-testing/carepoint/dist","ignore":["firebase.json","**/.*","**/node_modules/**"],"rewrites":[{"source":"**","destination":"/index.html"}]},
+    {"target":"finflow","public":"automation-testing/finflow/dist","ignore":["firebase.json","**/.*","**/node_modules/**"],"rewrites":[{"source":"**","destination":"/index.html"}]},
+    {"target":"tripnest","public":"automation-testing/tripnest/dist","ignore":["firebase.json","**/.*","**/node_modules/**"],"rewrites":[{"source":"**","destination":"/index.html"}]},
+    {"target":"skillspring","public":"automation-testing/skillspring/dist","ignore":["firebase.json","**/.*","**/node_modules/**"],"rewrites":[{"source":"**","destination":"/index.html"}]},
+    {"target":"bitedash","public":"automation-testing/bitedash/dist","ignore":["firebase.json","**/.*","**/node_modules/**"],"rewrites":[{"source":"**","destination":"/index.html"}]},
+    {"target":"homescout","public":"automation-testing/homescout/dist","ignore":["firebase.json","**/.*","**/node_modules/**"],"rewrites":[{"source":"**","destination":"/index.html"}]},
+    {"target":"hirepath","public":"automation-testing/hirepath/dist","ignore":["firebase.json","**/.*","**/node_modules/**"],"rewrites":[{"source":"**","destination":"/index.html"}]},
+    {"target":"connectplus","public":"automation-testing/connectplus/dist","ignore":["firebase.json","**/.*","**/node_modules/**"],"rewrites":[{"source":"**","destination":"/index.html"}]},
+    {"target":"coverwise","public":"automation-testing/coverwise/dist","ignore":["firebase.json","**/.*","**/node_modules/**"],"rewrites":[{"source":"**","destination":"/index.html"}]}
+  ],
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json",
+    "edition": "enterprise",
+    "database": "trytestme-platform",
+    "location": "asia-south1"
+  }
+}

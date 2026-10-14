@@ -8,13 +8,13 @@
         "shoptest": ["ttm-shoptest"],
         "carepoint": ["ttm-carepoint"],
         "finflow": ["ttm-finflow"],
-        "tripnest": ["ttm-tripnest"],
-        "skillspring": ["ttm-skillspring"],
+        "tripnest": ["tripnest"],
+        "skillspring": ["skillspring"],
         "bitedash": ["ttm-bitedash"],
         "homescout": ["ttm-homescout"],
-        "hirepath": ["ttm-hirepath"],
+        "hirepath": ["hirepath"],
         "connectplus": ["ttm-connectplus"],
-        "coverwise": ["ttm-coverwise"]
+        "coverwise": ["coverwise"]
       }
     }
   }

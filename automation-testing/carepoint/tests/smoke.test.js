@@ -1,0 +1,1 @@
+import { readFileSync } from 'node:fs'; const source=readFileSync(new URL('../src/config.js',import.meta.url),'utf8'); for(const marker of ['CarePoint','Doctors','Book appointment','patientName']) if(!source.includes(marker)) throw new Error(`Missing smoke marker: ${marker}`); console.log('CarePoint smoke checks passed');

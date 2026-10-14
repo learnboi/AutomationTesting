@@ -1,0 +1,1 @@
+import { readFileSync } from 'node:fs'; const source=readFileSync(new URL('../src/config.js',import.meta.url),'utf8'); for(const marker of ['HomeScout','Properties','Request a viewing','preferredDate']) if(!source.includes(marker)) throw new Error(`Missing smoke marker: ${marker}`); console.log('HomeScout smoke checks passed');

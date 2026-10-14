@@ -1,0 +1,8 @@
+{
+  "name": "trytestme-automation-testing",
+  "private": true,
+  "scripts": {},
+  "devDependencies": {
+    "vite": "^7.1.7"
+  }
+}

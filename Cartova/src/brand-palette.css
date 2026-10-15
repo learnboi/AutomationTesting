@@ -1,0 +1,103 @@
+/* Cartova brand palette: confident navy, clinical teal, warm sand accents. */
+:root {
+  --navy: #102f49;
+  --ink: #1d3b52;
+  --muted: #5f7486;
+  --teal: #087d78;
+  --mint: #e1f1ef;
+  --paper: #f5f8f8;
+  --line: #d9e4e7;
+  --gold: #c28a43;
+  --shadow: 0 18px 50px rgba(16, 47, 73, .09);
+}
+
+body {
+  color: var(--ink);
+  background: #fbfcfc;
+}
+
+.header {
+  background: rgba(255, 255, 255, .98);
+  box-shadow: 0 1px 0 rgba(16, 47, 73, .03);
+}
+
+.search-wrap {
+  background: #f1f6f6;
+  border-color: #edf2f3;
+}
+
+.search-wrap input::placeholder,
+.signout,
+.account-nav button,
+.small-empty,
+.footer-main button {
+  color: var(--muted);
+}
+
+.account-welcome h1,
+.admin-top h1,
+.account-panel h2,
+.account-panel h3,
+.account-stats b,
+.admin-stats b {
+  color: var(--navy);
+}
+
+.account-avatar {
+  background: var(--navy);
+  box-shadow: 0 8px 20px rgba(16, 47, 73, .16);
+}
+
+.account-layout {
+  gap: 54px;
+}
+
+.account-nav button {
+  transition: background-color .2s ease, color .2s ease, transform .2s ease;
+}
+
+.account-nav button.active,
+.account-nav button:hover {
+  background: var(--mint);
+  color: var(--teal);
+}
+
+.account-nav button:hover {
+  transform: translateX(2px);
+}
+
+.account-stats div,
+.admin-stats div {
+  background: #f3f8f8;
+  border: 1px solid #e9f0f1;
+}
+
+.account-panel {
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(16, 47, 73, .04);
+}
+
+.account-panel p,
+.order-row small,
+.address-card small {
+  color: var(--muted);
+}
+
+.order-row em,
+.address-card em {
+  background: var(--mint);
+  color: var(--teal);
+}
+
+.account-logout {
+  color: #ad5b5b !important;
+}
+
+.account-logout:hover {
+  background: #fff2f1 !important;
+  color: #a04444 !important;
+}
+
+.toast {
+  box-shadow: 0 14px 34px rgba(16, 47, 73, .2);
+}

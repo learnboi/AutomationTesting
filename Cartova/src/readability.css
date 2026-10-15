@@ -1,0 +1,80 @@
+/* Readability scale: details should remain comfortable at 100% browser zoom. */
+body { font-size: 15px; }
+.announcement { font-size: 13px; }
+.nav { font-size: 15px; }
+.search-wrap input { font-size: 14px; }
+.signout { font-size: 13px; }
+.btn { padding: 14px 21px; font-size: 14px; }
+.eyebrow { font-size: 11px; }
+.text-link { font-size: 14px; }
+.section-head h2, .section-head h1 { font-size: 34px; }
+.hero p, .editorial-copy p, .lead { font-size: 16px; }
+.hero-note { font-size: 13px; }
+.category-card span:not(.category-icon) { font-size: 14px; }
+.product-brand { font-size: 12px; }
+.product-name { font-size: 15px; }
+.rating small { font-size: 12px; }
+.price-row b { font-size: 17px; }
+.shop-title p, .shop-title .text-link { font-size: 15px; }
+.filters label, .filter-label, .results-bar, .check-label { font-size: 13px; }
+.filters select, .price-inputs input, .results-bar select { font-size: 13px; }
+.breadcrumbs { font-size: 13px; }
+.empty-state p, .empty-page p { font-size: 15px; }
+.variant>b, .stock-line { font-size: 14px; }
+.variant button { font-size: 13px; padding: 9px 14px; }
+.delivery-note b { font-size: 13px; }
+.delivery-note small { font-size: 12px; }
+.form-block label, .auth-box label, .simple-box label, .profile-fields label { font-size: 13px; }
+.form-block input, .form-block select, .auth-box input, .simple-box input, .simple-box textarea, .profile-fields input { font-size: 14px; }
+.checkout-title h1, .shop-title h1, .cart-page h1, .wishlist-page h1 { font-size: 46px; }
+.account-welcome h1, .admin-top h1 { font-size: 42px; }
+.account-nav button { font-size: 14px; }
+.account-stats small, .order-row small, .address-card small { font-size: 12px; }
+.account-panel p { font-size: 14px; }
+.small-empty { font-size: 14px; }
+.panel-head h2 { font-size: 24px; }
+.order-row { font-size: 14px; }
+.footer-main button, .footer-bottom { font-size: 12px; }
+
+/* Address form alignment: labels sit above full-width controls in the grid. */
+.add-address .address-fields label {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 8px;
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.add-address .address-fields input {
+  display: block;
+  width: 100%;
+  height: 46px;
+  margin: 0;
+  padding: 0 13px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  outline: 0;
+  background: #fff;
+  color: var(--navy);
+  font-size: 15px;
+}
+
+.add-address .address-fields input:focus {
+  border-color: #70b2ad;
+  box-shadow: 0 0 0 3px rgba(8, 125, 120, .12);
+}
+
+.add-address > .btn {
+  margin-top: 24px;
+}
+
+@media (max-width: 720px) {
+  .announcement { font-size: 11px; }
+  .nav { font-size: 14px; }
+  .btn { font-size: 13px; }
+  .section-head h2, .section-head h1 { font-size: 29px; }
+  .account-welcome h1, .admin-top h1 { font-size: 34px; }
+  .account-nav button { font-size: 12px; }
+}

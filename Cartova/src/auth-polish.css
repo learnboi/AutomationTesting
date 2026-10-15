@@ -1,0 +1,111 @@
+/* Auth screens: calm spacing, consistent controls, and a properly aligned terms row. */
+.auth-content {
+  padding: 36px clamp(28px, 8vw, 120px) 64px;
+}
+
+.auth-box {
+  width: 100%;
+  max-width: 480px;
+  margin: clamp(56px, 9vh, 96px) auto 0;
+}
+
+.auth-heading h2 {
+  font-size: clamp(32px, 3.2vw, 42px);
+  line-height: 1.08;
+  margin: 14px 0 12px;
+}
+
+.auth-heading p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 34px;
+}
+
+.auth-box form {
+  gap: 20px;
+}
+
+.auth-box form > label:not(.check-label) {
+  font-size: 13px;
+  line-height: 1.2;
+}
+
+.auth-box form > label:not(.check-label) > input,
+.auth-box .password-field input {
+  height: 56px;
+  margin-top: 10px;
+  padding: 0 16px;
+  border-radius: 9px;
+  background: #fff;
+  font-size: 15px;
+  transition: border-color .2s, box-shadow .2s;
+}
+
+.auth-box input::placeholder {
+  color: #7a8997;
+  opacity: 1;
+}
+
+.auth-box input:focus {
+  border-color: #70b2ad;
+  box-shadow: 0 0 0 3px rgba(47, 133, 127, .12);
+}
+
+.password-field button {
+  top: 50%;
+  right: 12px;
+  padding: 6px;
+  transform: translateY(-50%);
+  border-radius: 6px;
+}
+
+.password-field button:hover,
+.password-field button:focus-visible {
+  color: var(--teal);
+  background: var(--mint);
+}
+
+/* Overrides the general .auth-box input rule so the checkbox stays compact. */
+.auth-box .check-label {
+  display: grid !important;
+  grid-template-columns: 20px minmax(0, 1fr);
+  align-items: start;
+  gap: 12px;
+  color: var(--ink);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.auth-box .check-label input {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  margin: 1px 0 0;
+  accent-color: var(--teal);
+}
+
+.auth-box .btn.full {
+  min-height: 56px;
+  border-radius: 9px;
+  font-size: 14px;
+}
+
+.auth-switch {
+  margin-top: 28px;
+  font-size: 13px;
+}
+
+@media (max-width: 720px) {
+  .auth-content {
+    padding: 28px 20px 56px;
+  }
+
+  .auth-box {
+    max-width: 520px;
+    margin-top: 38px;
+  }
+
+  .auth-heading h2 {
+    font-size: 34px;
+  }
+}

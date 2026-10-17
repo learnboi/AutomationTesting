@@ -1,0 +1,12 @@
+{
+  "auth": {
+    "authorizedDomains": [
+      "localhost",
+      "127.0.0.1",
+      "cartova.trytestme.online"
+    ],
+    "providers": {
+      "emailPassword": true
+    }
+  }
+}

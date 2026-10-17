@@ -9,7 +9,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@vercel/microfrontends": "^2.4.1",
     "@vitejs/plugin-react": "^4.3.3",
     "firebase": "^13.0.0",
     "lucide-react": "^0.468.0",
@@ -24,3 +23,4 @@
     "typescript": "^5.6.3"
   }
 }
+

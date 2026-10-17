@@ -1,17 +1,20 @@
-import { initializeApp } from 'firebase/app'
+import { getApp, getApps, initializeApp } from 'firebase/app'
 import { getAuth } from 'firebase/auth'
-import { getFirestore } from 'firebase/firestore'
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyC2NOIg0XRUEOJoBctCud1wRbmlrHKFDRU',
-  authDomain: 'automation-testing-48321.firebaseapp.com',
-  projectId: 'automation-testing-48321',
-  storageBucket: 'automation-testing-48321.firebasestorage.app',
-  messagingSenderId: '41151730211',
-  appId: '1:41151730211:web:25e5604ba6e75996929796',
-  measurementId: 'G-GEGP89ERTG',
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
 }
 
-export const firebaseApp = initializeApp(firebaseConfig)
-export const auth = getAuth(firebaseApp)
-export const db = getFirestore(firebaseApp, 'trytestme-platform')
+export const firebaseConfigured = Object.values(firebaseConfig).every(Boolean)
+
+export const firebaseApp = firebaseConfigured
+  ? (getApps().length ? getApp() : initializeApp(firebaseConfig))
+  : null
+
+export const auth = firebaseApp ? getAuth(firebaseApp) : null
+
